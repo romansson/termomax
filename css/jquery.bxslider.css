@@ -1,0 +1,93 @@
+
+
+.bx-wrapper {
+	position: relative;
+	margin: 50px auto 60px;	
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+.bxslider li a{
+	display: block;
+	text-align: center;
+	color: #335e8b;
+	padding-top: 5px;
+}
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	height: 200px;
+	
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	display: none;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: -25px;
+	background: url(../image/prev.jpg) no-repeat;
+}
+
+.bx-wrapper .bx-next {
+	right: -25px;
+	background: url(../image/next.jpg) no-repeat;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 20px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 99;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 10;
+	left: 10;
+	width: 100%;
+}
+.bx-caption{
+	display: none;
+}
+
+.bx-wrapper .bx-caption span {
+	color:#004ba0;
+	text-align: center;
+	font-family: Arial;
+	display: block;
+	padding: 10px;
+
+}
